@@ -12,6 +12,6 @@ app.set('views', path.join(__dirname, '../client/src/views'))
 app.use(webRoutes)
 
 // Server
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log('Server is running on http://www.localhost:3000/ to stop server press control+c')
 })
