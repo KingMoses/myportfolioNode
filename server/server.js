@@ -3,6 +3,7 @@ const app = express()
 const webRoutes = require('./routes/web.js')
 const pug = require('pug')
 const path = require('path')
+require('dotenv').config()
 
 
 app.use(express.static('client/public'))
